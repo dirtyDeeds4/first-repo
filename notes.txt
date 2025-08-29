@@ -1,0 +1,26 @@
+mkdir resouce-git
+cd resouce-git
+git init
+git status
+git add
+git commit
+cp -rf a b:创建一个b文件夹并将a赋值给b
+git log --oneline
+git reset --soft:回退到上一次提交状态
+git reset --hard:回退到上个版本已提交的状态，相当于删除一次文件如果三个版本分三次提交的话
+git reflog：回溯操作
+git ls-files查看暂存区中内容
+git add .删除暂存区内容(add后有空格)
+git commit -m"这是一次删除"
+git commit -am==git add+git commit -m
+git diff 比较工作区和暂存区之间的区别
+git diff --cached比较暂存区和版本库之间的区别
+git diff HEAD~ HEAD比较两个版本之间差异
+rm filename 删除工作区的文件，需要更新删除add到暂存区然后提交到版本库
+rm * 删除所有文件，但是删除的文件仍在暂存区中需要在暂存区中继续删除一次
+git rm files.txt 可以直接删除暂存区与工作区但是需要提交commit
+git remote add origin https://github.com/dirtyDeeds4/first-repo.git与github建立联系
+git push -u origin master将本地库文件发送到github的库中
+git clone https://github.com/dirtyDeeds4/first-repo.git下载整个仓库
+git remote -v查看连接情况
+rm -r -f first-repo 强制删除文件
